@@ -1,0 +1,3 @@
+docker image build -t pradeepkumar2690/employee .
+docker push pradeepkumar2690/employee
+docker run -d --name empweb --network emp-net -p 8080:8080 pradeepkumar2690/employee
